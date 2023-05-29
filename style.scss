@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Oswald&family=Prata&family=Raleway:ital,wght@0,200;1,400&family=Rampart+One&family=Roboto+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Oswald&family=Playfair+Display&family=Prata&family=Raleway:ital,wght@0,200;1,400&family=Rampart+One&family=Roboto+Slab:wght@300;400&display=swap');
+$font1: 'Roboto Slab', serif;
+$font2: 'Playfair Display', serif;
+$colorprincipal:rgba(200,176,221,255);
+
+// index inicia
+.barra {
+    background-color: rgba(200,176,221,255);
+    height: 120px;
+    font-size: 30px;
+    border: double 10px black;
+        .navbar-brand{
+            font-size: 30px;
+        }
+        .links{
+            .nav-item{
+                padding-right: 20px;
+                    a{
+                        color: black;
+                        font-family: $font1;
+                    }
+            }
+        }
+}
+.bgUno {
+    height: 350px;
+    background-image: linear-gradient(to right bottom,rgba(128, 128, 128, 0.467),$colorprincipal), url(assets/img/billete-en-mano.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.855);
+    padding-top: 125px;
+    border: ridge 3px $colorprincipal;
+    h1{
+        font-family: $font1;
+        font-size: 80px;
+        margin-bottom: 20px;
+        font-family: $font2;
+    }
+    em{
+        font-size: 20px;
+        letter-spacing: 1.2;
+    }
+}
+h2{
+    background-image: url(assets/img/stacked-waves-haikei.png);
+    font-family: $font1;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.855);
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+}
