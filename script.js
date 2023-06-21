@@ -1,14 +1,14 @@
 // peticion de edad
 
-// function edadUsuario (){
-//     var edad = Number (prompt("ingrese su edad"))
-//     if(edad>=21){
-//         alert("bienvenido a Devoluz")
-//     }else{
-//         alert("No se permiten menores de 21")
-//     }
-// }
-// edadUsuario()
+function edadUsuario (){
+    var edad = Number (prompt("ingrese su edad"))
+    if(edad>=21){
+        alert("bienvenido a Devoluz")
+    }else{
+        alert("No se permiten menores de 21")
+    }
+}
+edadUsuario()
 
 // fin de peticion de edad
 
@@ -34,7 +34,7 @@ switch(tipo){
     alert("Usted eligio el credito 2:\nIntereses del 15%\n10% del valor del credito\niva del 21% ")
     break;
     case 3:
-    alert("Usted eligio el credito 2:\nIntereses del 20%\n15% del valor del credito\niva del 21% ")
+    alert("Usted eligio el credito 3:\nIntereses del 20%\n15% del valor del credito\niva del 21% ")
     break;
     default:
     alert("Usted no eligio ninguna de las opciones")
@@ -61,7 +61,7 @@ class usuario{
 }
 
 
-const usuario1 = new usuario ('Max power','36','25555487','laplata547')
+const usuario1 = new usuario ('Maximo perez','36','25555487','laplata547')
 const usuario2 = new usuario (id_usu,age,documento,contraseña)
 console.log(usuario1,usuario2)
 
