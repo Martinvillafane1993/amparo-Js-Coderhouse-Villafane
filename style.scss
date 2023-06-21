@@ -1,61 +1,385 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Oswald&family=Prata&family=Raleway:ital,wght@0,200;1,400&family=Rampart+One&family=Roboto+Slab:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Oswald&family=Playfair+Display&family=Prata&family=Raleway:ital,wght@0,200;1,400&family=Rampart+One&family=Roboto+Slab:wght@300;400&display=swap');
-$font1: 'Roboto Slab', serif;
-$font2: 'Playfair Display', serif;
-$colorprincipal:rgba(200,176,221,255);
+$font1: 'Roboto Slab',
+serif;
+$font2: 'Playfair Display',
+serif;
+$colorprincipal:#004aad;
+
+html {
+    scroll-behavior: smooth;
+}
 
 // index inicia
+header{
+    background-image: linear-gradient(rgba(128, 128, 128, 0.375), rgba(128, 128, 128, 0.29)), url(assets/img/infant-2717347_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+h2 {
+    width: 100%;
+    height: 100px;
+    font-family: $font2;
+    font-size: 40px;
+    background-color: $colorprincipal;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0;
+}
+
+h3 {
+    width: 100%;
+    height: 100px;
+    font-family: $font2;
+    font-size: 40px;
+    background-color: $colorprincipal;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0;
+}
+// navbar inicia
 .barra {
-    background-color: rgba(200,176,221,255);
     height: 120px;
     font-size: 30px;
-    border: double 10px black;
-        .navbar-brand{
-            font-size: 30px;
-        }
-        .links{
-            .nav-item{
-                padding-right: 20px;
-                    a{
-                        color: black;
-                        font-family: $font1;
-                    }
+
+    .navbar-brand {
+        font-size: 30px;
+        
+
+    }
+
+    .links {
+        .nav-item {
+            padding-right: 20px;
+
+            a {
+                color: white;
+                font-family: $font1;
+                transition: all 1.3s;
+                text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            }
+
+            a:hover {
+                transform: scale(1.1);
+                transition: all 1.3s;
+                color: $colorprincipal;
+                text-shadow: -22px 20px 3px white;
             }
         }
+    }
 }
+
 .bgUno {
-    height: 350px;
-    background-image: linear-gradient(to right bottom,rgba(128, 128, 128, 0.467),$colorprincipal), url(assets/img/billete-en-mano.jpg);
+    height: 550px;
     background-position: center;
     background-size: cover;
     text-align: center;
     color: rgba(0, 0, 0, 0.855);
     padding-top: 125px;
-    border: ridge 3px $colorprincipal;
-    h1{
+
+    h1 {
         font-family: $font1;
         font-size: 80px;
         margin-bottom: 20px;
         font-family: $font2;
     }
-    em{
+
+    em {
         font-size: 20px;
         letter-spacing: 1.2;
     }
 }
-h2{
-    background-image: url(assets/img/stacked-waves-haikei.png);
-    font-family: $font1;
-    font-size: 35px;
-    color: rgba(0, 0, 0, 0.855);
-    height: 60px;
+
+// navbar fin
+
+
+// main inicia
+.conth2xh3{
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.641) 37%, rgba(255, 166, 0, 0.624));
+    .sametitle{
+        width: 100%;
+        height: 100px;
+        font-family: $font2;
+        font-size: 45px;
+        letter-spacing: 1.2px;
+        color: white;
+        text-align: center;
+        padding-top: 15px;
+        margin: 0;    
+    }
+    .sametitle1{
+        width: 100%;
+        height: 100px;
+        font-family: $font2;
+        font-size: 40px;
+        color: $colorprincipal;
+        text-align: center;
+        padding-top: 15px;
+        margin: 0;    
+    }
+    .nosotros {
+        width: 100%;
+        height: 550px;
+        color: black;
+        display: flex;
+        padding-top: 10px;
+    
+        .img {
+            width: 40%;
+            height: 500px;
+            display: flex;
+            justify-self: flex-end;
+            background-image: url(assets/img/niña_gafas.png);
+            border-radius: 50px;
+            background-position: center;
+            background-size: cover;
+            margin-left: 50px;
+        }
+    
+        .texto {
+            width: 50%;
+            height: 500px;
+            text-align: center;
+            padding: 50px 15px 15px 15px;
+            word-spacing: 1.3;
+            justify-self: flex-start;
+            p{
+                color: $colorprincipal;
+                font-size: 18px;
+                font-family: $font1;
+            }
+        }
+    }    
+}
+
+.creditos {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right bottom, rgba(72, 71, 71, 0.467), rgba(57, 56, 56, 0.224)), url(assets/img/billete-en-mano.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    .calculadora {
+        padding-top: 25px;
+        width: 50%;
+        height: 300px;
+        color: white;
+        font-size: 20px;
+        font-family: $font2;
+
+        .formLine {
+            width: 60%;
+            height: 70px;
+            position: relative;
+            left: 50px;
+        }
+
+        ::-webkit-input-placeholder {
+            font-size: 16px;
+            font-family: $font1;
+            padding-left: 5px;
+        }
+
+        input {
+            padding: 5px;
+            width: 100%;
+            border-radius: 50px;
+            border-style: outset;
+            color: #004aad;
+        }
+
+        .btn-danger {
+            color: white;
+            background-color: $colorprincipal;
+            font-family: $font1;
+            font-size: 16px;
+            border-radius: 50px;
+            border: solid black 1px;
+            position: absolute;
+            right: 150px;
+        }
+
+        .btnLeft {
+            color: white;
+            position: relative;
+            left: 70px;
+        }
+    }
+    .btnLeft:hover{
+        transform: scale(1.1);
+        transition: 1.1s;
+        background-color: violet;
+        color: $colorprincipal;
+        border-radius: 50px;
+        border: solid $colorprincipal 3px;
+    }
+    .btnRight:hover{
+        transform: scale(1.1);
+        transition: 1.1s;
+        background-color: violet;
+        color: $colorprincipal;
+        border-radius: 50px;
+        border: solid $colorprincipal 3px;
+    }
+
+
+    .contRes {
+        width: 50%;
+        height: 400px;
+        background-color: rgba(24, 49, 107, 0.335);
+
+        h4 {
+            color: white;
+            font-size: 36px;
+            font-family: $font1;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        #resultado {
+            padding-top: 20px;
+            color: white;
+            font-size: 26px;
+            font-family: $font1;
+            text-align: center;
+        }
+    }
+}
+
+.formRegistro {
+    width: 100%;
+    height: 550px;
+    background-image: url(assets/img/family-2610205_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    .cont-formL {
+        background-color: #004bad6f;
+        color: white;
+        font-style: $font1;
+        font-size: 18px;
+        width: 50vw;
+        height: 550px;
+        display: flex;
+        justify-self: flex-start;
+        padding: 15px;
+    }
+    .cont-formR{
+        background-color: #004bad6f;
+        color: white;
+        font-style: $font1;
+        font-size: 18px;
+        width: 50vw;
+        height: 550px;
+        display: flex;
+        justify-self: flex-end;
+        padding: 15px;
+        .btnForm {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+    
+            .btnTop {
+                margin-bottom: 15px;
+            }
+    
+            .btn-warning {
+                color: white;
+                background-color: $colorprincipal;
+                font-family: $font1;
+                font-size: 16px;
+                border: solid black 1px;
+            }
+    
+            .btn-warning:hover {
+                transform: scale(1.1);
+                transition: 1.1s;
+                background-color: violet;
+                color: $colorprincipal;
+                border-radius: 50px;
+                border: solid $colorprincipal 3px;
+            }
+        }    
+    }
+
+    .formrow {
+        padding: 15px 50px 10px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 100px;
+        input {
+            padding: 5px;
+            width: 100%;
+            border-radius: 50px;
+            border-style: outset;
+            color: black;
+            font-family: $font1;
+        }
+
+        select {
+            color: black;
+            font-family: $font1;
+        }
+
+        option {
+            color: black;
+            font-family: $font1;
+        }
+    }
+
+}
+
+// main fin
+
+// footer inicia
+
+.pie {
+    width: 100%;
+    height: 100px;
+background-image: linear-gradient( to bottom , $colorprincipal 35%, violet);    font-family: $font1;
+    font-size: 25px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+// footer fin
+
+// boton hacia arriba
+.heartup{
+    width: 55px;
+    height: 55px;
+    border: solid 1px white;
+    background-color: $colorprincipal;
+    border-radius: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    transition: all 1.3s;
+    i{
+        font-size: 30px;
+        text-align: center;
+        padding: 14px 4px 5px 11px;
+        transition: all 1.3s;
+    }
+}
+.heartup:hover{
+    transform: rotateY(3.142rad);
+    transition: 1.2s;
+            border: solid 1px violet;
+}
+i:hover{
+    transition: 1.4s;
+    color: violet;
 }
