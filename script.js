@@ -1,5 +1,3 @@
-
-
 // simulador de prestamos
 document.addEventListener("DOMContentLoaded", function () {
     let btnCalcular = document.getElementById("calcular")
@@ -29,8 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // formulario de registro inicia
+
 let btnregistro = document.getElementById("btnregistro")
-btnregistro.addEventListener("click", function (loguin){ 
+btnregistro.addEventListener("click", function (loguin) {
     loguin.preventDefault();
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
@@ -43,27 +42,65 @@ btnregistro.addEventListener("click", function (loguin){
     let edad = document.getElementById("edad").value;
     let provinciaX = document.getElementById("provincia").value
 
-    
+
     class Usuario {
 
-        constructor(nombre,apellido,codArea,celular,generoX,email,cuilCuit,fechaNacimiento,edad,provinciaX){
+        constructor(nombre, apellido, codArea, celular, generoX, email, cuilCuit, fechaNacimiento, edad, provinciaX) {
             this.nombre = nombre
-            this.apellido =apellido
-            this.codArea =codArea
-            this.celular =celular
-            this.generoX =generoX
-            this.email =email
-            this.cuilCuit =cuilCuit
-            this.fechaNacimiento =fechaNacimiento
-            this.edad =edad
-            this.provinciaX =provinciaX
+            this.apellido = apellido
+            this.codArea = codArea
+            this.celular = celular
+            this.generoX = generoX
+            this.email = email
+            this.cuilCuit = cuilCuit
+            this.fechaNacimiento = fechaNacimiento
+            this.edad = edad
+            this.provinciaX = provinciaX
         }
 
-}
-let usuarioX = new Usuario(nombre, apellido, codArea, celular, generoX, email, cuilCuit, fechaNacimiento, edad, provinciaX);
+    }
+    let usuarioX = new Usuario(nombre, apellido, codArea, celular, generoX, email, cuilCuit, fechaNacimiento, edad, provinciaX);
     localStorage.setItem("usuarioX", JSON.stringify(usuarioX));
 });
 
 // formulario de registro finaliza
 
 console.log(localStorage.getItem("usuarioX"));
+
+let usuarioRegistrado = [];
+
+function Registrar_usuario (nombre,
+    apellido,
+    codArea,
+    celular,
+    generoX,
+    email,
+    cuilCuit,
+    fechaNacimiento,
+    edad,
+    provinciaX) {
+
+    const nuevoUsuario = new usuario (nombre,
+        apellido,
+        codArea,
+        celular,
+        generoX,
+        email,
+        cuilCuit,
+        fechaNacimiento,
+        edad,
+        provinciaX)
+
+        usuarioRegistrado.push (nuevoUsuario)
+}
+Registrar_usuario (nombre,
+    apellido,
+    codArea,
+    celular,
+    generoX,
+    email,
+    cuilCuit,
+    fechaNacimiento,
+    edad,
+    provinciaX)
+console.log (usuarioRegistrado)
