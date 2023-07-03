@@ -5,7 +5,6 @@
     color: white
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Oswald&family=Prata&family=Raleway:ital,wght@0,200;1,400&family=Rampart+One&family=Roboto+Slab:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Oswald&family=Playfair+Display&family=Prata&family=Raleway:ital,wght@0,200;1,400&family=Rampart+One&family=Roboto+Slab:wght@300;400&display=swap');
 $font1: 'Roboto Slab',
@@ -19,11 +18,12 @@ html {
 }
 
 // index inicia
-header{
+header {
     background-image: linear-gradient(rgba(128, 128, 128, 0.375), rgba(128, 128, 128, 0.29)), url(assets/img/infant-2717347_1280.jpg);
     background-position: center;
     background-size: cover;
 }
+
 h2 {
     width: 100%;
     height: 100px;
@@ -47,6 +47,7 @@ h3 {
     padding-top: 15px;
     margin: 0;
 }
+
 // navbar inicia
 .barra {
     height: 120px;
@@ -54,7 +55,7 @@ h3 {
 
     .navbar-brand {
         font-size: 30px;
-        
+
 
     }
 
@@ -104,9 +105,10 @@ h3 {
 
 
 // main inicia
-.conth2xh3{
+.conth2xh3 {
     background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.641) 37%, rgba(255, 166, 0, 0.624));
-    .sametitle{
+
+    .sametitle {
         width: 100%;
         height: 100px;
         font-family: $font2;
@@ -115,9 +117,10 @@ h3 {
         color: white;
         text-align: center;
         padding-top: 15px;
-        margin: 0;    
+        margin: 0;
     }
-    .sametitle1{
+
+    .sametitle1 {
         width: 100%;
         height: 100px;
         font-family: $font2;
@@ -125,15 +128,16 @@ h3 {
         color: $colorprincipal;
         text-align: center;
         padding-top: 15px;
-        margin: 0;    
+        margin: 0;
     }
+
     .nosotros {
         width: 100%;
         height: 550px;
         color: black;
         display: flex;
         padding-top: 10px;
-    
+
         .img {
             width: 40%;
             height: 500px;
@@ -145,7 +149,7 @@ h3 {
             background-size: cover;
             margin-left: 50px;
         }
-    
+
         .texto {
             width: 50%;
             height: 500px;
@@ -153,13 +157,14 @@ h3 {
             padding: 50px 15px 15px 15px;
             word-spacing: 1.3;
             justify-self: flex-start;
-            p{
+
+            p {
                 color: $colorprincipal;
                 font-size: 18px;
                 font-family: $font1;
             }
         }
-    }    
+    }
 }
 
 .creditos {
@@ -216,7 +221,8 @@ h3 {
             left: 70px;
         }
     }
-    .btnLeft:hover{
+
+    .btnLeft:hover {
         transform: scale(1.1);
         transition: 1.1s;
         background-color: violet;
@@ -224,7 +230,8 @@ h3 {
         border-radius: 50px;
         border: solid $colorprincipal 3px;
     }
-    .btnRight:hover{
+
+    .btnRight:hover {
         transform: scale(1.1);
         transition: 1.1s;
         background-color: violet;
@@ -276,7 +283,8 @@ h3 {
         justify-self: flex-start;
         padding: 15px;
     }
-    .cont-formR{
+
+    .cont-formR {
         background-color: #004bad6f;
         color: white;
         font-style: $font1;
@@ -286,15 +294,16 @@ h3 {
         display: flex;
         justify-self: flex-end;
         padding: 15px;
+
         .btnForm {
             width: 100px;
             height: 100px;
             margin-top: 20px;
-    
+
             .btnTop {
                 margin-bottom: 15px;
             }
-    
+
             .btn-warning {
                 color: white;
                 background-color: $colorprincipal;
@@ -302,7 +311,7 @@ h3 {
                 font-size: 16px;
                 border: solid black 1px;
             }
-    
+
             .btn-warning:hover {
                 transform: scale(1.1);
                 transition: 1.1s;
@@ -311,7 +320,7 @@ h3 {
                 border-radius: 50px;
                 border: solid $colorprincipal 3px;
             }
-        }    
+        }
     }
 
     .formrow {
@@ -320,6 +329,7 @@ h3 {
         flex-direction: column;
         align-items: center;
         margin-left: 100px;
+
         input {
             padding: 5px;
             width: 100%;
@@ -349,15 +359,17 @@ h3 {
 .pie {
     width: 100%;
     height: 100px;
-background-image: linear-gradient( to bottom , $colorprincipal 35%, violet);    font-family: $font1;
+    background-image: linear-gradient(to bottom, $colorprincipal 35%, violet);
+    font-family: $font1;
     font-size: 25px;
     text-align: center;
     padding-top: 20px;
 }
+
 // footer fin
 
 // boton hacia arriba
-.heartup{
+.heartup {
     width: 55px;
     height: 55px;
     border: solid 1px white;
@@ -367,19 +379,37 @@ background-image: linear-gradient( to bottom , $colorprincipal 35%, violet);    
     right: 100px;
     bottom: 100px;
     transition: all 1.3s;
-    i{
+
+    i {
         font-size: 30px;
         text-align: center;
         padding: 14px 4px 5px 11px;
         transition: all 1.3s;
     }
 }
-.heartup:hover{
+
+.heartup:hover {
     transform: rotateY(3.142rad);
     transition: 1.2s;
-            border: solid 1px violet;
+    border: solid 1px violet;
 }
-i:hover{
+
+i:hover {
     transition: 1.4s;
     color: violet;
 }
+
+// sweet alert inicia
+.my-alert-container {
+    font-family: $font1;
+}
+
+.my-alert-title {
+    color: #ffffff;
+}
+
+.my-alert-content {
+    color: #ffffff;
+
+}
+// sweet alert finaliza

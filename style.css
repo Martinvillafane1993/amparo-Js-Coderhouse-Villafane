@@ -341,4 +341,16 @@ i:hover {
   color: violet;
 }
 
+.my-alert-container {
+  font-family: "Roboto Slab", serif;
+}
+
+.my-alert-title {
+  color: #ffffff;
+}
+
+.my-alert-content {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */

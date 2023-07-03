@@ -23,84 +23,67 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+// modificar el simulador a fetch con archivo local .Json
 // simulador de prestamos finaliza
 
 
 // formulario de registro inicia
 
-let btnregistro = document.getElementById("btnregistro")
-btnregistro.addEventListener("click", function (loguin) {
-    loguin.preventDefault();
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
-    let codArea = document.getElementById("codArea").value;
-    let celular = document.getElementById("celular").value;
-    let generoX = document.getElementById("genero").value;
-    let email = document.getElementById("email").value;
-    let cuilCuit = document.getElementById("cuilCuit").value;
-    let fechaNacimiento = document.getElementById("fechaNacimiento").value;
-    let edad = document.getElementById("edad").value;
-    let provinciaX = document.getElementById("provincia").value
+const btnregistro = document.getElementById("btnregistro")
 
-
-    class Usuario {
-
-        constructor(nombre, apellido, codArea, celular, generoX, email, cuilCuit, fechaNacimiento, edad, provinciaX) {
-            this.nombre = nombre
-            this.apellido = apellido
-            this.codArea = codArea
-            this.celular = celular
-            this.generoX = generoX
-            this.email = email
-            this.cuilCuit = cuilCuit
-            this.fechaNacimiento = fechaNacimiento
-            this.edad = edad
-            this.provinciaX = provinciaX
-        }
-
+class Usuario {
+    constructor(usuario) {
+        this.usuario = usuario
     }
-    let usuarioX = new Usuario(nombre, apellido, codArea, celular, generoX, email, cuilCuit, fechaNacimiento, edad, provinciaX);
-    localStorage.setItem("usuarioX", JSON.stringify(usuarioX));
-});
+}
+
+const saveLocalStorage = (usuario) => {
+    localStorage.setItem("usuario", JSON.stringify(usuario));
+    console.log(localStorage.getItem("usuario"));
+}
+
+btnregistro.addEventListener("click", (loguin) => {
+
+    loguin.preventDefault();
+
+    let usuario = {}
+    usuario.nombre = document.getElementById("nombre").value
+    usuario.apellido = document.getElementById("apellido").value
+    usuario.codArea = document.getElementById("codArea").value
+    usuario.genero = document.getElementById("genero").value
+    usuario.email = document.getElementById("email").value
+    usuario.cuilCuit = document.getElementById("cuilCuit").value
+    usuario.fechaNacinamiento = document.getElementById("fechaNacimiento").value
+    usuario.edad = document.getElementById("edad").value
+    usuario.provincia = document.getElementById("provincia").value
+
+    usuario = new Usuario(usuario);
+    saveLocalStorage(usuario);
+
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Se ha registrado con exito',
+        showConfirmButton: false,
+        timer: 2000,
+        customClass:{ container: 'my-alert-container',
+        title: 'my-alert-title',
+        content: 'my-alert-content',
+        confirmButton: 'my-alert-button'
+        },
+        background: '#004aad'
+        })
+})
+
+const usuarioLogeado = [Usuario]
+console.log(usuarioLogeado)
 
 // formulario de registro finaliza
 
-console.log(localStorage.getItem("usuarioX"));
 
-let usuarioRegistrado = [];
 
-function Registrar_usuario (nombre,
-    apellido,
-    codArea,
-    celular,
-    generoX,
-    email,
-    cuilCuit,
-    fechaNacimiento,
-    edad,
-    provinciaX) {
 
-    const nuevoUsuario = new usuario (nombre,
-        apellido,
-        codArea,
-        celular,
-        generoX,
-        email,
-        cuilCuit,
-        fechaNacimiento,
-        edad,
-        provinciaX)
 
-        usuarioRegistrado.push (nuevoUsuario)
-}
-Registrar_usuario (nombre,
-    apellido,
-    codArea,
-    celular,
-    generoX,
-    email,
-    cuilCuit,
-    fechaNacimiento,
-    edad,
-    provinciaX)
-console.log (usuarioRegistrado)
+
+
+
