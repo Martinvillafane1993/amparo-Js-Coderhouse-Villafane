@@ -22,7 +22,7 @@ h2 {
   width: 100%;
   height: 100px;
   font-family: "Playfair Display", serif;
-  font-size: 40px;
+  font-size: 45px;
   background-color: #004aad;
   color: white;
   text-align: center;
@@ -85,7 +85,7 @@ h3 {
 }
 
 .conth2xh3 {
-  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.641) 37%, rgba(255, 166, 0, 0.624));
+  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.641) 37%, rgba(18, 52, 188, 0.624));
 }
 .conth2xh3 .sametitle {
   width: 100%;
@@ -103,7 +103,7 @@ h3 {
   height: 100px;
   font-family: "Playfair Display", serif;
   font-size: 40px;
-  color: #004aad;
+  color: white;
   text-align: center;
   padding-top: 15px;
   margin: 0;
@@ -130,7 +130,7 @@ h3 {
   width: 50%;
   height: 500px;
   text-align: center;
-  padding: 50px 15px 15px 15px;
+  padding: 150px 15px 15px 15px;
   word-spacing: 1.3;
   justify-self: flex-start;
 }
@@ -151,10 +151,11 @@ h3 {
 .creditos .calculadora {
   padding-top: 25px;
   width: 50%;
-  height: 300px;
+  height: 400px;
   color: white;
   font-size: 20px;
   font-family: "Playfair Display", serif;
+  background-color: rgba(24, 49, 107, 0.335);
 }
 .creditos .calculadora .formLine {
   width: 60%;
@@ -166,6 +167,12 @@ h3 {
   font-size: 16px;
   font-family: "Roboto Slab", serif;
   padding-left: 5px;
+}
+.creditos .calculadora label {
+  border-radius: 50px;
+  width: 100%;
+  padding: 5px 0px 0px 5px;
+  color: white;
 }
 .creditos .calculadora input {
   padding: 5px;
@@ -183,11 +190,13 @@ h3 {
   border: solid black 1px;
   position: absolute;
   right: 150px;
+  margin-top: 20px;
 }
 .creditos .calculadora .btnLeft {
   color: white;
   position: relative;
   left: 70px;
+  margin-top: 20px;
 }
 .creditos .btnLeft:hover {
   transform: scale(1.1);
@@ -223,6 +232,30 @@ h3 {
   font-size: 26px;
   font-family: "Roboto Slab", serif;
   text-align: center;
+}
+
+.sectCredEsp {
+  background-image: url(assets/img/billetes2.jpg);
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.sectCredEsp #ContCredEsp {
+  width: 100%;
+  height: 500px;
+  padding: 100px 0 0 25px;
+}
+
+.card-custom {
+  height: 350px;
+  background-color: #004aad;
+  font-family: "Roboto Slab", serif;
+  border-radius: 50px;
+  text-shadow: -1px 1px 4px white;
+}
+.card-custom .card-text {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .formRegistro {
@@ -305,7 +338,7 @@ h3 {
 .pie {
   width: 100%;
   height: 100px;
-  background-image: linear-gradient(to bottom, #004aad 35%, violet);
+  background-color: #004aad;
   font-family: "Roboto Slab", serif;
   font-size: 25px;
   text-align: center;
@@ -350,6 +383,10 @@ i:hover {
 }
 
 .my-alert-content {
+  color: #ffffff;
+}
+
+.my-alert-text {
   color: #ffffff;
 }
 

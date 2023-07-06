@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Credito amparo</title>
 </head>
 
 <body>
+
     <header>
-        <nav  class="navbar navbar-expand-sm d-flex navbar-dark barra">
+        <nav class="navbar navbar-expand-sm d-flex navbar-dark barra">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/Creditos_amparo.png" alt="Avatar Logo" style="width: 95px;"
@@ -43,12 +45,15 @@
         </nav>
         <div class="jumbotron jumbotron-fluid bgUno">
             <div class="container">
-                <h1>Bienvenido <span id="nombreUsuario"></span></h1>
+                <h1>Bienvenido</span></h1>
                 <em>En creditos amparo estamos para ayudarte</em>
             </div>
         </div>
     </header>
+
     <main>
+
+
         <div class="conth2xh3">
             <section id="nosotros" class="sametitle">Nosotros</section>
             <div class="container-fluid nosotros">
@@ -73,19 +78,35 @@
             </div>
             <form class="container calculadora">
                 <div class="formLine">
-                    <input placeholder="Ingrese el monto que desea" type="text" id="monto">
+                    <label for="monto">Ingrese el monto que desea</label>
+                    <input name="monto" placeholder="" type="text" id="monto">
                 </div>
                 <div class="formLine">
-                    <input placeholder="Ingrese los intereses" type="text" id="intereses">
+                    <label for="intereses">Ingrese los intereses</label>
+                    <input name="intereses" placeholder="" type="text" id="intereses">
                 </div>
                 <div class="formLine">
-                    <input placeholder="Ingrese la cantidad de cuotas" type="text" id="cuotas">
+                    <label for="cuotas">Ingrese la cantidad de cuotas</label>
+                    <input name="cuotas" placeholder="" type="text" id="cuotas">
                 </div>
                 <button type="button" class="btn btnLeft btn-danger" id="calcular">Calcular</button>
                 <button type="reset" class="btn btnRight btn-danger">Borrar</button>
             </form>
         </div>
         </div>
+        <div class="container-fluid sectCredEsp">
+            <div class="row">
+                <div class="col">        
+                    <div id="ContCredEsp" class="row row-cols-1 row-cols-md-3 g-4" >
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </div>        
+
 
         <h2 id="registrate">Registrate</h2>
         <div class="container-fluid formRegistro">
@@ -162,26 +183,31 @@
             </div>
         </div>
     </main>
+
+
+
     <div class="container-fluid pie">
         <footer>
             <p>Todos los derechos reservados</p>
         </footer>
     </div>
 
-    <div class="heartup">
-        <a href="#"><i class="fa-sharp fa-solid fa-heart fa-beat"></i></a>
-    </div>
+        <div class="heartup">
+            <a href="#"><i class="fa-sharp fa-solid fa-heart fa-beat"></i></a>
+        </div>
 
 
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+
+
 </body>
 
 </html>

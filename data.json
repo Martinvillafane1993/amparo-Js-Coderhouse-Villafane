@@ -1,0 +1,23 @@
+[
+    {
+    "id": 1,
+    "titulo": "Credito especial 1",
+    "monto": "$500.000",
+    "texto": "24 cuotas fijas y 10% de intereses"
+
+},
+{
+    "id": 2,
+    "titulo": "Credito especial 2",
+    "monto": "$1.000.000",
+    "texto": "24 cuotas fijas y 10% de intereses"
+
+},
+{
+    "id": 3,
+    "titulo": "Credito especial 3",
+    "monto": "$1.500.000",
+    "texto": "24 cuotas fijas y 10% de intereses"
+}
+
+]
